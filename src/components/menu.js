@@ -10,36 +10,39 @@ export const menuItems = [
                 title:'Collection'
             },
             {
-                subtitle:'Collection Left Sidebar',
-                subtitle:'Collection Left Sidebar',
-                subtitle:'Collection Right Sidebar',
-                subtitle:'Collection Full Width',
-                subtitle:'Collection Canvas Sidebar',
-                subtitle:'All Collections'
+                subtitle:[
+                    'Collection Left Sidebar',
+                     'Collection Left Sidebar',
+                     'Collection Right Sidebar',
+                     'Collection Full Width',
+                     'Collection Canvas Sidebar',
+                     'All Collections']
             },
             {
                 title:'PRODUCT SINGLE'
             },
             {
-                subtitle:'Single Product V1',
-                subtitle:'Single Product V2',
-                subtitle:' Single Product V3',
-                subtitle:'Single Product V4',
-                subtitle:'Single Product V5',
-                subtitle:'Single Product V6',
-                subtitle:'Product Pre-Order',
-                subtitle:'Product Video'
+                subtitle:[
+                    'Single Product V1',
+                    'Single Product V2',
+                    'Single Product V3',
+                    'Single Product V4',
+                    'Single Product V5',
+                    'Single Product V6',
+                    'Product Pre-Order',
+                    'Product Video']
             },
             {
                 title:'INNER PAGES'
             },
             {
-                subtitle:'About Us',
-                subtitle:'Contact Us',
-                subtitle:'FAQs Page',
-                subtitle:'Terms and Services',
-                subtitle:'Privacy Policy',
-                subtitle:'Size Guide'
+                subtitle:[
+                    'About Us',
+                    'Contact Us',
+                    'FAQs Page',
+                    'Terms and Services',
+                    'Privacy Policy',
+                    'Size Guide']
             },
             {
                 image:{}
@@ -50,44 +53,47 @@ export const menuItems = [
         title:'Women',
         subMenu:[
                 {
-                 subtitle:'BEST SELLERS',            
-                 subtitle:'NEW ARRIVALS',            
-                 subtitle:'TOP TRENDING',            
-                 subtitle:'DENIM COLLECTION',
+                 subtitle:[
+                          'BEST SELLERS',            
+                          'NEW ARRIVALS',            
+                          'TOP TRENDING',            
+                          'DENIM COLLECTION']
                 },
                 {
                     title:'CLOTHES',
                 },
                 {
-                        subtitle:'Outwear',
-                        subtitle:'Sweaters',
-                        subtitle:'Sweatshirts',
-                        subtitle:'Trousers',
-                        subtitle:'T-Shirts',
-                        subtitle:'Blouses',
-                        subtitle:'Jeans',
-                        subtitle:'Dresses',
-                        subtitle:'Jackets',
-                        subtitle:'Skirts',
-                        subtitle:'Shirts',
-                        subtitle:'Shorts',
+                        subtitle:[
+                                 'Outwear',
+                                 'Sweaters',
+                                 'Sweatshirts',
+                                 'Trousers',
+                                 'T-Shirts',
+                                 'Blouses',
+                                 'Jeans',
+                                 'Dresses',
+                                 'Jackets',
+                                 'Skirts',
+                                 'Shirts',
+                                 'Shorts', ]
                     },
                     {
                         title:'ACCESSORIES',
                     },
                     {
-                        subtitile:'Pyjamas',
-                        subtitile:'Underwear',
-                        subtitile:'Socks and slippers',
-                        subtitile:'Shoes',
-                        subtitile:'Bags, backpacks',
-                        subtitile:'Winter accessories',
-                        subtitile:'Hats',
-                        subtitile:'Accessories',
-                        subtitile:'Swimwear',
-                        subtitile:'Sport',
-                        subtitile:'Beauty',
-                        subtitile:'License - accessorie',
+                        subtitile:[
+                                  'Pyjamas',
+                                  'Underwear',
+                                  'Socks and slippers',
+                                  'Shoes',
+                                  'Bags, backpacks',
+                                  'Winter accessories',
+                                  'Hats',
+                                  'Accessories',
+                                  'Swimwear',
+                                  'Sport',
+                                  'Beauty',
+                                  'License - accessorie',]
                     }                        
         ]
      },
@@ -95,12 +101,13 @@ export const menuItems = [
         title:'Blog',
         subMenu:[
             {
-                subtitle:'Blog Left Sidebar',
-                subtitle:'Blog Right Sidebar',
-                subtitle:'Blog Without Sidebar',
-                subtitle:'Blog Grid With Sidebar',
-                subtitle:'Blog List With Sidebar',
-                subtitle:'Blog Detail Left Sidebar'
+                subtitle:[
+                          'Blog Left Sidebar',
+                          'Blog Right Sidebar',
+                          'Blog Without Sidebar',
+                          'Blog Grid With Sidebar',
+                          'Blog List With Sidebar',
+                          'Blog Detail Left Sidebar']
             }
         ]
     }

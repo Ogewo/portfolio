@@ -21,14 +21,21 @@ function Navbar() {
          <div><FaShoppingBag className='icon'/><a href='#'>My Cart</a></div>
          </div> */}
 
-         <ul className='menus'>
-            {
-                menuItems.map((menu, index)=>{
-                    const depthLevel = 0;
-                    return <menuItems items={menu} key={index} depthLevel={depthLevel} />
-                })
-            }
-         </ul>
+       {menuItems.map((item, index) => (
+        <div key={index} className='nav-item'>
+            {item.title}
+            {item.subMenu && (
+                <ul className='sub-menu'>
+                    {item.subMenu.map((subItem, subIndex) => (
+                        <li key={subIndex} className='sub-item'>
+                            <strong>{subItem.title }</strong>
+                            {subItem.subtitle}
+                        </li>
+                    ))}
+                </ul>
+            )}
+        </div>
+       ))}
     </nav>
    )
 }
