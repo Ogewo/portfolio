@@ -9,28 +9,34 @@ nav{
 .nav-item {
     position: relative;
     cursor: pointer;
-    width: 100%;
-  }
+}
   
   .sub-menu {
     display: none;
     position: absolute;
     top: 0;
     left: 0;
-    width: 200%;
     background-color: #444;
     padding: 10px;
     list-style: none;
     z-index: 1;
   }
-  
-  /* Adjusting the submenu placement */
   .nav-item:hover .sub-menu {
-    display: block;
-    top: calc(100% + 5px); /* Added spacing between parent and submenu */
+    display: flex; /* Display the submenu when hovered */
+    align-items: center;
+    position: fixed;
+    top: 0;
     left: 0;
+    width: 100vw; /* Cover the entire viewport width */
+    height: 50vh; /* Cover the entire viewport height */
+    background-color: rgba(136, 99, 99, 0.9); /* Add a background color or style as needed */
+    z-index: 1000; /* Ensure the menu is on top of other content */
+    overflow: auto; /* Enable scrolling if the content overflows */
+    padding: 0px; /* Add spacing as needed */
+}
+  .sub-items{
+    display: block;
   }
-  
-  .sub-item {
-    padding: 5px 0;
+  .sub-menu.active{
+    display: block;
   }
