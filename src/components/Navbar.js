@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 import {FaSearch,FaUser,FaShoppingBag} from 'react-icons/fa'
 import { menuItems } from './menu'
-import './NavbarStyles.css'
 
 function Navbar() {
     const [showForm, setShowForm] = useState(false)
