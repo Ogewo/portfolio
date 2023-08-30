@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <>
      <header className='border w-full h-[80px] flex
-     items-center justify-center'>
+     items-center px-[200px]'>
      <div className='container'>
         <div className='flex items-center justify-between'>
           {/* ===========Logo============ */}
@@ -18,7 +18,7 @@ const Header = () => {
           {/* =========Logo End========= */}
           {/* =========menu start========= */}
           <div className='menu'>
-            <ul className='flex items-center gap-[20px]'>
+            <ul className='flex items-center gap-[70px]'>
               <li><a className='text-smallTextColor font-[600]' href='#'>About</a></li>
               <li><a className='text-smallTextColor font-[600]' href='#'>Services</a></li>
               <li><a className='text-smallTextColor font-[600]' href='#'>Portfolio</a></li>
