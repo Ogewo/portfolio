@@ -3,7 +3,7 @@ import { FaPaperPlane, FaBars} from 'react-icons/fa'
 const Header = () => {
   return (
     <>
-     <header className='border w-full h-[80px] flex
+     <header className='w-full h-[80px] flex
      items-center px-[200px]'>
      <div className='container'>
         <div className='flex items-center justify-between'>
