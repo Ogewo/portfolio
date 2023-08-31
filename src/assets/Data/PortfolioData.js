@@ -6,7 +6,7 @@ import portfolioImg05 from "../images/portfolio-05.jpg";
 import portfolioImg06 from "../images/portfolio-06.jpg";
 import portfolioImg07 from "../images/portfolio-07.jpg";
 
-export const portfolios = [
+export const data = [
     {
       id: 1,
       imgUrl: portfolioImg01,
