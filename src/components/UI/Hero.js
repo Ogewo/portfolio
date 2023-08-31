@@ -1,5 +1,4 @@
 import React from 'react'
-import heroImg from '../../assets/images/eli.JPG'
 import devImg from '../../assets/images/dev-img.png'
 import Countup from 'react-countup'
 import { FaEnvelope, FaThLarge, FaYoutube,FaTwitter, FaLinkedin, FaGithub} from 'react-icons/fa'

@@ -1,6 +1,5 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import {portfolios} from '../../assets/Data/PortfolioData'
-
 function Portfolio() {
   return (
     <>
@@ -16,18 +15,16 @@ function Portfolio() {
                 <button className='text-smallTextColor border border-solid border-smallTextColor py-2 px-4 rounded-[8px]'>UI/UX Design</button>
             </div>
            </div>
-           <div className='flex items-center gap-4 flex-wrap mt-12'>
-            
-            {portfolios.map((portfolio, index) =>{
-                <div className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
-                    <img className='rounded-[8px]' src={portfolio.imgUrl } key={index} alt=''/>                   
-                </div>
-            })}
+           <div className='flex items-center justify-center gap-4 flex-wrap mt-12'> 
+            {portfolios.map((portfolio, id) => (
+           <div key={id} className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
+            <img className='rounded-[8px]' src={portfolio.imgUrl} alt=''/>
+           </div>
+          ))}
            </div>
        </div>
      </section>
     </>
   )
 }
-
 export default Portfolio

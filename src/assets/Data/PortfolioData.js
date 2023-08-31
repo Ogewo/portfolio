@@ -8,7 +8,7 @@ import portfolioImg07 from "../images/portfolio-07.jpg";
 
 export const portfolios = [
     {
-      id: "01",
+      id: 1,
       imgUrl: portfolioImg01,
       category: "Web Design",
       title: "Finance Technology Website",
@@ -18,7 +18,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "02",
+      id: 2,
       imgUrl: portfolioImg04,
       category: "Ux",
       title: "Video Conference Website",
@@ -28,7 +28,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "03",
+      id: 3,
       imgUrl: portfolioImg02,
       category: "Ux",
       title: "Multimedia Sharing Website",
@@ -38,7 +38,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "04",
+      id: 4,
       imgUrl: portfolioImg05,
       category: "Web Design",
       title: "Landing Page",
@@ -48,7 +48,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "05",
+      id: 5,
       imgUrl: portfolioImg03,
       category: "Web Design",
       title: "Landing Page",
@@ -59,7 +59,7 @@ export const portfolios = [
     },
   
     {
-      id: "06",
+      id: 6,
       imgUrl: portfolioImg06,
       category: "Ux",
       title: "Online Therapy Website",
@@ -69,7 +69,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "07",
+      id: 7,
       imgUrl: portfolioImg07,
       category: "Web Design",
       title: "Appointment Booking Website",
@@ -79,7 +79,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "08",
+      id: 8,
       imgUrl: portfolioImg01,
       category: "Web Design",
       title: "Finance Technology Website",
@@ -89,7 +89,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "09",
+      id: 9,
       imgUrl: portfolioImg02,
       category: "Ux",
       title: "Video Conference Website",
@@ -99,7 +99,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "10",
+      id: 10,
       imgUrl: portfolioImg03,
       category: "Ux",
       title: "File Sharing Website",
@@ -109,7 +109,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "11",
+      id: 11,
       imgUrl: portfolioImg04,
       category: "Web Design",
       title: "Landing Page",
@@ -119,7 +119,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "12",
+      id: 12,
       imgUrl: portfolioImg05,
       category: "Web Design",
       title: "Landing Page",
@@ -129,7 +129,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "13",
+      id: 13,
       imgUrl: portfolioImg06,
       category: "Web Design",
       title: "Online Therapy Website",
@@ -139,7 +139,7 @@ export const portfolios = [
       siteUrl: "#",
     },
     {
-      id: "14",
+      id: 14,
       imgUrl: portfolioImg07,
       category: "ux",
       title: "Appointment Booking Website",
