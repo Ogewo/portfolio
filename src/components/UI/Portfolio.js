@@ -1,13 +1,21 @@
 import React, {useState, useEffect} from 'react'
 import {data} from '../../assets/Data/PortfolioData'
+import Modal from './Modal'
 function Portfolio() {
 
   const [nextItems, setNextItems] = useState(6)
   const [portfolios, setPortfolios] = useState(data)
   const [selectTab, setSelectTab] = useState('all')
+  const [showModal, setShowModal] = useState(false)
+  const [activeID, setActiveID] = useState(null)
 
   const loadMoreHandler = () => {
     setNextItems(prev => prev + 3)
+  }
+
+  const showModalHandler = id => {
+    setShowModal(true)
+    setActiveID(id)
   }
 
 useEffect(() => {
@@ -44,11 +52,7 @@ useEffect(() => {
             {portfolios.slice(0, nextItems).map((portfolio, id) => (
            <div data-aos='fade-zoom-in' data-aos-delay='50' data-aos-duration='1000' key={id} className='group max-w-full sm:w-[48.5%] md:w-[31.8%] lg:w-[32.2%] relative z-[1]'>
             <img className='rounded-[8px]' src={portfolio.imgUrl} alt=''/>
-            <div className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block'>
-              <div className='w-full h-full flex items-center justify-center'>
-                <button className='text-white bg-headingColor hover:bg-smallTextColor py-2 px-4 rounded-[8px] font-[500] ease-in-out duration-200'>See Details</button>
-              </div> 
-            </div> 
+            <div onClick={()=>showModalHandler(portfolio.id)} className='w-full h-full bg-primaryColor bg-opacity-40 absolute top-0 left-0 z-[5] hidden group-hover:block cursor-pointer rounded-[8px]'></div> 
            </div> 
           ))}
            </div>
@@ -60,6 +64,9 @@ useEffect(() => {
             }
             </div>
        </div>
+       {
+        showModal && <Modal setShowModal={setShowModal} activeID={activeID} />
+       }
      </section>
     </>
   )

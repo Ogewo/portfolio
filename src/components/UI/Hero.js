@@ -54,7 +54,7 @@ const Hero = () => {
             </div>
             {/* ========= hero left end ========== */}
             {/* ========= hero left image ========== */}
-            <div className='basis-1/2 mt-10 sm:mt-0 '>
+            <div className='basis-3/4 mt-10 sm:mt-0 '>
               <figure className='flex items-center justify-center'>
                  <img src={devImg} alt='' className=' rounded-[50%]'/>
               </figure>
