@@ -1,7 +1,15 @@
-import React, {useEffect, useRef} from 'react'
-import { FaPaperPlane, FaBars} from 'react-icons/fa'
+import React, {useState, useEffect, useRef} from 'react'
+import { FaPaperPlane, FaBars, FaTimes} from 'react-icons/fa'
+import MobileNav from '../components/UI/MobileNav';
 
 const Header = () => {
+
+  const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+
+  const toggleNavbar = () => {
+    setIsNavbarOpen(!isNavbarOpen);
+  };
+
   const headerRef = useRef(null);
 
   const stickyHeaderFunc = () => {
@@ -25,7 +33,7 @@ const Header = () => {
     };
   }, []);
 
-  const handleClick = (e) => {
+ const handleClick = (e) => {
     e.preventDefault();
 
     const targetAttr = e.target.getAttribute('href');
@@ -68,12 +76,17 @@ const Header = () => {
 
               <FaPaperPlane/>Let's Talk
             </button>
-            <span className='text-2xl text-smallTextColor md:hidden cursor-pointer'><FaBars/></span>
+            <span onClick={toggleNavbar} className='text-2xl text-smallTextColor md:hidden cursor-pointer'><FaBars/></span>
           </div>
           {/* =========menu right end========= */}
         </div>
      </div>
      </header>
+
+     <div className='absolute top-1/2 left-1/2 z-20 rounded-[8px] transform -translate-x-1/2 -translate-y-1/2 p-5'>    
+      {isNavbarOpen && <MobileNav />}
+      {/* Your other header content here */}
+    </div>
     </>
   )
 }
